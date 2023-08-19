@@ -2,32 +2,31 @@
 void print_integer(int m);
 
 /**
- * print_number - a function that prints an integer.
+ * print_number - function that prints an integer n
  * @n: An input integer
  * Return: Nothing
  */
 void print_number(int n)
 {
-	if (n == 0)
-		_putchar('0');
-	else if (n < 0)
+	if (n < 0)
 	{
 		_putchar('-');
 		print_integer(n * -1);
 	}
+	else if (n == 0)
+		_putchar('0');
 	else
 		print_integer(n);
 }
 
 /**
- * print_integer - A function to print an integer m
- * @m: an input unsigned integer
+ * print_integer - function that prints an integer m
+ * @m: An input integer
  * Return: Nothing
  */
 void print_integer(int m)
 {
 	int i = 1000000000;
-
 	for (; i >= 1; i /= 10)
 		if (m / i != 0)
 		{
