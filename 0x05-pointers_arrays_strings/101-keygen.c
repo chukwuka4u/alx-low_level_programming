@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#define LEN 100
+#define VAR 2772
+#define VAR2 78
 /**
  * main - program that generates random valid
  * passwords for the program 101-crackme
@@ -10,21 +12,21 @@
  */
 int main(void)
 {
-	int pass[100];
+	int pass[LEN];
 	int i, sum, n;
 
-	sum = 0;	
+	sum = 0;
 
 	srand(time(NULL));
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < LEN; i++)
 	{
-		pass[i] = rand() % 78;
+		pass[i] = rand() % VAR2;
 		sum += (pass[i] + '0');
 		putchar(pass[i] + '0');
-		if ((2772 - sum) - '0' < 78)
+		if ((VAR - sum) - '0' < VAR2)
 		{
-			n = 2772 - sum - '0';
+			n = VAR - sum - '0';
 			sum += n;
 			putchar(n + '0');
 			break;
