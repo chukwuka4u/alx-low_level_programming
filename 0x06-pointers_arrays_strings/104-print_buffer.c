@@ -12,6 +12,7 @@
 void print_row(char *c, int s, int l)
 {
 	int x, y;
+
 	for (x = 0; x <= 9; x++)
 	{
 		if (x <= s)
