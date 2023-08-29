@@ -1,0 +1,2 @@
+0x07. C - Even more pointers, arrays and strings
+Delve into the power of memory addresses and pointers in this project. Learn to manipulate and access data directly in memory by declaring, initializing, and dereferencing pointers. Explore pointers to pointers for dynamic data structures and advanced memory management. Dive into multidimensional arrays, accessing elements in matrices and other structures. Master common C standard library functions for efficient string manipulation.
