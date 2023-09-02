@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -c -Wall -pedantic -Werror -Wextra *.c
+gcc -c -Wno-unused-parameter -Wall -pedantic -Wextra *.c
 ar -rcs liball.a *.o
